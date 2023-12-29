@@ -111,7 +111,7 @@ const Search=()=>{
 
                 // setPage(1)
             })
-    },[])
+    },[name])
     function valueChange(allValues) {
         let Byear, Bmonth, Bday, Eyear, Emonth, Eday;
 

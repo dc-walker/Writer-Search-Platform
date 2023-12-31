@@ -31,7 +31,7 @@ public class Author {
     @TableField("Writtingstyle")
     private String writingStyle;
     @TableField("provence")
-    private String province;
+    private String provence;
     @TableField("city")
     private String city;
     @TableField("pseudonym")

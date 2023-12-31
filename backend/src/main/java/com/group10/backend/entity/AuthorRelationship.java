@@ -10,7 +10,7 @@ import lombok.Data;
 public class AuthorRelationship {
     @TableId("authorID")
     private int authorId;
-    @TableField("otherID")
+    @TableField("otherName")
     private int otherId;
     @TableField("relationship")
     private String relationship;

@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/authorsearch
-    username: 'root'
-    password: 'zjj309420,.'
+    url: jdbc:mysql://wwwrc.site:3306/rgg
+    username: 'remote'
+    password: 'password'
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:

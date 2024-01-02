@@ -18,7 +18,7 @@ function MyKG() {
         let nodeTemp = []
         let linkTemp = []
 
-        const response = await fetch(kgURL);
+        const response = await fetch(`${kgURL}?id=${id}`);
         const data = await response.json();
 
         setRelationship(data)

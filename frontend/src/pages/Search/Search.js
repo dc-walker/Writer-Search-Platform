@@ -98,6 +98,7 @@ const Search=()=>{
             .then(response=>{
                 console.log(response);
                 const mappedPopularAuthorList = Object.values(response).map(item => ({
+                    id: item.id,
                     name: item.name,
                     imgUrl: item.imgUrl,
                 }));
@@ -245,7 +246,7 @@ const Search=()=>{
             popularAuthorList.push(
                 <Col span={8} title={popularAuthor[i].name}>
                     <Avatar src={popularAuthor[i].imgUrl} style={{width:"80px",height:"80px"}}
-                            onClick={()=>navigate(`/writer?name=${popularAuthor[i].name}`)}/>
+                            onClick={()=>navigate(`/writer?name=${popularAuthor[i].name}&id=${popularAuthor[i].id}`)}/>
                     <p style={{width:"80px",textAlign: "center"}}>{popularAuthor[i].name}</p>
                 </Col>
             )

@@ -8,7 +8,7 @@ const LifeTime = (props) =>{
     const [timeline, setTimeLine] = useState([])
     const url = 'http://localhost:8090/api/getTimeLine'
     useEffect(() => {
-        fetch(url).then(resp => resp.json())
+        fetch(`${url}?id=${id}`).then(resp => resp.json())
             .then(data =>{
                 setTimeLine(data)
             })

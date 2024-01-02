@@ -45,10 +45,10 @@ const Related = (props) =>{
   //获取书的信息
   const url = 'http://localhost:8090/api/getBooks'
   useEffect(() => {
-    fetch(url).then(response => response.json())
+    fetch(`${url}?id=${id}`).then(response => response.json())
         .then(data =>{
           setBooks(data)
-          const imgs = data.map(item => ({name:item.title,img:item.imgUrl}))
+          const imgs = data.map(item => ({name:item.title,img:item.source}))
           setBookImgs(imgs)
         })
   },[])
@@ -87,19 +87,18 @@ const Related = (props) =>{
 
 
   return(
-    <div style={{marginTop:"2rem", marginBottom:"2rem"}}>
-      <Card style={{width: "95%", backgroundColor:"rgba(255,255,255,0.6)", backdropFilter:"blur(8px)"}}>
-        <Space align={"center"}>
-          <Avatar size={"large"} icon={<ReadOutlined/>} style={{color: "black" , backgroundColor: "transparent"}}/>
-          <h3>相关作品</h3>
-        </Space>
-        {/*<Table dataSource={dataSource} columns={columns} />*/}
-        <InfoCarousel/>
-        <Drawer placement={'left'} open={open} onClose={onClose} getContainer={false}>
-          <BookDetail book={books[curBook]} />
-        </Drawer>
-      </Card>
-    </div>
+      <div style={{marginTop:"2rem", marginBottom:"2rem"}}>
+        <Card style={{width: "95%", backgroundColor:"rgba(255,255,255,0.6)", backdropFilter:"blur(8px)"}}>
+          <Space align={"center"}>
+            <Avatar size={"large"} icon={<ReadOutlined/>} style={{color: "black" , backgroundColor: "transparent"}}/>
+            <h3>相关作品</h3>
+          </Space>
+          <InfoCarousel/>
+          <Drawer placement={'left'} open={open} onClose={onClose} getContainer={false}>
+            <BookDetail book={books[curBook]} />
+          </Drawer>
+        </Card>
+      </div>
   )
 }
 export default Related;

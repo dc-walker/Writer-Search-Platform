@@ -8,7 +8,7 @@ const WordCloud = (props) =>{
     const [word , setWord] = useState([])
     const url = 'http://localhost:8090/api/getWordCloud';
     useEffect(() => {
-        fetch(url).then(resp => resp.json())
+        fetch(`${url}?id=${id}`).then(resp => resp.json())
             .then(data =>{
                 console.log(data)
                 setWord(data)

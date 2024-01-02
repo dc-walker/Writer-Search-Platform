@@ -22,6 +22,7 @@ const WriterDetail = (props) =>{
   useEffect(() =>{
     fetch(writerURL).then(resp => resp.json())
         .then(data =>{
+          console.log(data);
           //获取作家信息，不显示imgUrl
           const itemTemp = Object.entries(data).map(([key,value], index) =>{
             if(key !== 'imgUrl'){

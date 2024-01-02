@@ -58,23 +58,6 @@ const Search=()=>{
     const [ page, setPage ] = useState(0)
     const [authorCard, setAuthorCard] = useState(null)
 
-    // fetch("http://localhost:8080/searchAuthor")
-    //     .then(response=>{
-    //         const mappedPopularAuthorList = Object.values(response.data).map(item => ({
-    //             name: item.name,
-    //             imgUrl: item.imgUrl,
-    //         }));
-    //         setPopularAuthor(mappedPopularAuthorList);
-    //     })
-    //
-    // fetch("http://localhost:8080/getNews")
-    //     .then(response=>{
-    //         const mappedNewsList = Object.values(response.data).map(item => ({
-    //             title: item.title,
-    //             URL: item.URL,
-    //         }));
-    //         setNews(mappedNewsList);
-    //     })
 
     useEffect(() => {
         const cards = drawAuthorCard();
@@ -102,7 +85,7 @@ const Search=()=>{
                     deathDate :item.deathDate,
                     sex:item.gender,
                     honors:item.honors,
-                    provence:item.province,
+                    provence:item.provence,
                     city:item.city,
                     pseudonym:item.pseudonym
                 }));
@@ -110,7 +93,26 @@ const Search=()=>{
                 setAuthor(mappedAuthorList)
 
                 // setPage(1)
+            });
+        fetch("http://localhost:8090/api/getPopAuthor").then(response => response.json())
+            .then(response=>{
+                console.log(response);
+                const mappedPopularAuthorList = Object.values(response).map(item => ({
+                    name: item.name,
+                    imgUrl: item.imgUrl,
+                }));
+                setPopularAuthor(mappedPopularAuthorList);
             })
+        fetch("http://localhost:8090/api/getNews").then(response => response.json())
+            .then(response=>{
+                const mappedNewsList = Object.values(response).map(item => ({
+                    title: item.title,
+                    URL: item.url,
+                }));
+                setNews(mappedNewsList);
+            })
+        drawPopularAuthor();
+        drawNews();
     },[name])
     function valueChange(allValues) {
         let Byear, Bmonth, Bday, Eyear, Emonth, Eday;
@@ -162,6 +164,7 @@ const Search=()=>{
         console.log(newSearchData);
         axios.post("http://localhost:8090/api/highSearch", newSearchData)
             .then(response=>{
+                console.log(response);
                 const mappedAuthorList = Object.values(response.data).map(item => ({
                     name: item.name,
                     imgUrl: item.imgUrl,
@@ -169,7 +172,7 @@ const Search=()=>{
                     deathDate :item.deathDate,
                     sex:item.gender,
                     honors:item.honors,
-                    provence:item.province,
+                    provence:item.provence,
                     city:item.city,
                     pseudonym:item.pseudonym
                 }));
@@ -235,13 +238,13 @@ const Search=()=>{
 
         return  authorCardList;
     }
-
+    let popularAuthorList=[];
     function drawPopularAuthor() {
-        let popularAuthorList=[];
+
         for(let i=0;popularAuthor&&i<popularAuthor.length;i++){
             popularAuthorList.push(
                 <Col span={8} title={popularAuthor[i].name}>
-                    <Avatar src={popularAuthor[i].imgURL} style={{width:"80px",height:"80px"}}
+                    <Avatar src={popularAuthor[i].imgUrl} style={{width:"80px",height:"80px"}}
                             onClick={()=>navigate(`/writer?name=${popularAuthor[i].name}`)}/>
                     <p style={{width:"80px",textAlign: "center"}}>{popularAuthor[i].name}</p>
                 </Col>
@@ -252,7 +255,7 @@ const Search=()=>{
 
     function drawNews() {
         let newsList=[];
-        if(HotNews){
+        if(HotNews.length === 3){
             newsList.push(
                 <Col span={24}>
                     <Avatar style={{ backgroundColor: '#FF0000', color: '#FFFFFF' }}>1</Avatar>
@@ -480,7 +483,7 @@ const Search=()=>{
                         <Col span={24}>
                             <Card title={"其他人还在搜"} style={{backgroundColor: "rgba(255,255,255,0.6)", backdropFilter: "blur(8px)" }}>
                                 <Row gutter={[24,5]}>
-                                    {/*{drawPopularAuthor()}*/}
+                                    {drawPopularAuthor()}
                                     {/*<Col span={8} title={"鲁迅"}>*/}
                                     {/*    <Avatar src={demo4} style={{width:"80px",height:"80px"}}*/}
                                     {/*            onClick={()=>navigate("/writer?name="+"鲁迅")}/>*/}
@@ -501,7 +504,7 @@ const Search=()=>{
                         <Col span={24}>
                             <Card title={"最新资讯"} style={{backgroundColor: "rgba(255,255,255,0.6)", backdropFilter: "blur(8px)" }}>
                                 <Row gutter={[24,16]}>
-                                    {/*{drawNews()}*/}
+                                    {drawNews()}
                                     {/*<Col span={24}>*/}
                                     {/*    <Avatar style={{ backgroundColor: '#FF0000', color: '#FFFFFF' }}>1</Avatar>*/}
                                     {/*    <span*/}

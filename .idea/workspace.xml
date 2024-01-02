@@ -4,37 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="777f366f-30be-41c0-abf9-62083b05e104" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="777f366f-30be-41c0-abf9-62083b05e104" name="更改" comment="前后端URL统一">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/NewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorDisplayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorRelationshipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorRelationshipController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/frontend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Chat/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Chat/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LifeTime/LifeTime.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LifeTime/LifeTime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Related/Related.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Related/Related.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/WordCloud/WordCloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/WordCloud/WordCloud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/NewsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/NewsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/SearchRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/SearchRecordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/TimeLineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/TimeLineMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/WordCloudMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/mapper/WordCloudMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/WriterDetail/WriterDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/WriterDetail/WriterDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/kg.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/kg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Search/Search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +55,16 @@
       <option name="presentableId" value="Default" />
       <updated>1703861964650</updated>
       <workItem from="1703861966043" duration="35000" />
-      <workItem from="1704177502927" duration="785000" />
+      <workItem from="1704177502927" duration="10146000" />
     </task>
+    <task id="LOCAL-00001" summary="前后端URL统一">
+      <created>1704178567197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704178567197</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="前后端URL统一" />
+    <option name="LAST_COMMIT_MESSAGE" value="前后端URL统一" />
   </component>
 </project>

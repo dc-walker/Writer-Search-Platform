@@ -18,7 +18,7 @@ const WriterDetail = (props) =>{
   const {name,id} = props//作家名，id
   const [items, setItems] = useState([])
   const [img,setImg] = useState('')
-  const writerURL = 'https://www.fastmock.site/mock/0a62bd1eaff571e6a131a772cdd8d3cd/api/writerDetail'
+  const writerURL = 'http://localhost:8090/api/writerDetail'
   useEffect(() =>{
     fetch(writerURL).then(resp => resp.json())
         .then(data =>{

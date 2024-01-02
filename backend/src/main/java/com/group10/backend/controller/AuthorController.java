@@ -98,7 +98,7 @@ public class AuthorController {
                 if(searchReq.getProvence().length() > 0)
                 {
                     System.out.println("!!!!!!!!!!Province!!!!!!!!!!");
-                    MatchQueryBuilder matchQueryBuilder = QueryBuilders.matchQuery("province", searchReq.getProvence());
+                    MatchQueryBuilder matchQueryBuilder = QueryBuilders.matchQuery("provence", searchReq.getProvence());
                     boolQuery.filter(matchQueryBuilder);
                 }
             }

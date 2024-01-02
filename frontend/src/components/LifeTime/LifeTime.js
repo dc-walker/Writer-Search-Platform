@@ -6,7 +6,7 @@ const LifeTime = (props) =>{
     const {name,id} = props
     const [flag, setFlag] = useState(false)
     const [timeline, setTimeLine] = useState([])
-    const url = 'https://www.fastmock.site/mock/0a62bd1eaff571e6a131a772cdd8d3cd/api/getTimeLine'
+    const url = 'http://localhost:8090/api/getTimeLine'
     useEffect(() => {
         fetch(url).then(resp => resp.json())
             .then(data =>{

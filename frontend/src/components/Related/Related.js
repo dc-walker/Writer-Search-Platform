@@ -43,7 +43,7 @@ const Related = (props) =>{
   const [books,setBooks] = useState([])//所有书的信息
 
   //获取书的信息
-  const url = 'https://www.fastmock.site/mock/0a62bd1eaff571e6a131a772cdd8d3cd/api/getBooks'
+  const url = 'http://localhost:8090/api/getBooks'
   useEffect(() => {
     fetch(url).then(response => response.json())
         .then(data =>{

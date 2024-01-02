@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 const WordCloud = (props) =>{
     const id = props.id;//作家id
     const [word , setWord] = useState([])
-    const url = 'https://www.fastmock.site/mock/0a62bd1eaff571e6a131a772cdd8d3cd/api/getWordCloud';
+    const url = 'http://localhost:8090/api/getWordCloud';
     useEffect(() => {
         fetch(url).then(resp => resp.json())
             .then(data =>{

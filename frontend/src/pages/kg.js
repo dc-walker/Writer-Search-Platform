@@ -9,7 +9,7 @@ function MyKG() {
     const curName = params.get('name')     //传来的名字参数
     const id = params.get('id');          //作家id
     const chartRef = useRef(null);
-    const kgURL = 'https://www.fastmock.site/mock/0a62bd1eaff571e6a131a772cdd8d3cd/api/relation';
+    const kgURL = 'http://localhost:8090/api/getRelation';
     const [relationship, setRelationship] = useState([])
     const [nodes, setNodes] = useState([])
     const [links, setLinks] = useState([])

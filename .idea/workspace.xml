@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="777f366f-30be-41c0-abf9-62083b05e104" name="更改" comment="" />
+    <list default="true" id="777f366f-30be-41c0-abf9-62083b05e104" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorDisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorDisplayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorRelationshipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/AuthorRelationshipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/group10/backend/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/frontend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Chat/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Chat/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/LifeTime/LifeTime.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LifeTime/LifeTime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Related/Related.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Related/Related.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/WordCloud/WordCloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/WordCloud/WordCloud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/WriterDetail/WriterDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/WriterDetail/WriterDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/kg.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/kg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/setupTests.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +57,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/Program/软工管/Writer-Search-Platform",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -36,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703861964650</updated>
       <workItem from="1703861966043" duration="35000" />
+      <workItem from="1704177502927" duration="785000" />
     </task>
     <servers />
   </component>

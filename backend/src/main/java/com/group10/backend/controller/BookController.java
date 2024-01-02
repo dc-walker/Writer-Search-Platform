@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/api")
 @CrossOrigin
 public class BookController {
     @Resource

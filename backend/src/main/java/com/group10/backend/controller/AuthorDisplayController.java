@@ -22,7 +22,7 @@ import javax.annotation.Resource;
 import java.util.*;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/api")
 @CrossOrigin
 public class AuthorDisplayController {
     @Resource
